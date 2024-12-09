@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Rock Care</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Take Care of Your Pet Rock!</h1>
+        <div id="name-prompt" class="hidden">
+            <label for="rock-name">Enter your pet rock's name:</label>
+            <input type="text" id="rock-name" />
+            <button onclick="setName()">Start</button>
+        </div>
+        <div id="main-app" class="hidden">
+            <h2 id="rock-name-display"></h2>
+            <img src="https://i.imgur.com/Js9eWqs.png" alt="Pet Rock" id="pet-rock" />
+            <div>
+                <button onclick="interact('feed')">Feed</button>
+                <button onclick="interact('play')">Play</button>
+                <button onclick="interact('sleep')">Put to Sleep</button>
+            </div>
+            <h3>Stats:</h3>
+            <ul>
+                <li>Hunger: <span id="hunger"></span></li>
+                <li>Energy: <span id="energy"></span></li>
+                <li>Happiness: <span id="happiness"></span></li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
