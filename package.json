@@ -1,0 +1,17 @@
+{
+  "name": "pet-rock-app",
+  "version": "1.0.0",
+  "description": "A fun app where users can take care of their pet rock!",
+  "main": "api/index.js",
+  "scripts": {
+    "start": "node api/index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {},
+  "author": "Nomen Nescio",
+  "license": "MIT"
+}
+
